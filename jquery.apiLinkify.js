@@ -1,6 +1,6 @@
 ;(function ($) {
   $.fn.apiLinkify = function () {
-    var jQueryMethods = /^[\.\$(jQuery)][\w\.]+/,
+    var jQueryMethods = /^(\$|jQuery)?\.\w+/,
         jQueryApiSite = "http://api.jquery.com/";
     
     this.each(function (idx, val) {
